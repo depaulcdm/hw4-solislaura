@@ -1,7 +1,11 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
+    <groupId>edu.depaul.cdm.se441</groupId>
+    <artifactId>hello-world</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 	<!--
-	TODO: Provide the project coordinates. The group ID should beginpage
+	TODO (DONE): Provide the project coordinates. The group ID should beginpage
 	'edu.depaul.cdm.se441', the artifact ID should be 'hello-world' and
 	the version should be '1.0-SNAPSHOT. The packaging for this artifact
 	should be 'jar'.
@@ -12,9 +16,24 @@
 	  <maven.compiler.source>17</maven.compiler.source>
 	  <maven.compiler.target>17</maven.compiler.target>
 	</properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 	<!--
-	TODO: Define the dependencies for both the compile and test
+	TODO (DONE): Define the dependencies for both the compile and test
 	scopes. We need the following dependencies:
 	
 	log4j v.1.2.17 (for everything)
